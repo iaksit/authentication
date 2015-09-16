@@ -1,0 +1,6 @@
+SetEnv APP_ENV development
+#SetEnv APP_ENV production
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
